@@ -56,5 +56,5 @@ class Transformer(nn.Module):
       x = self.ultimus_prime[i](x)
 
     x = self.fc(x)
-    return F.log_softmax(x, dim=-1)
+    return x
 
